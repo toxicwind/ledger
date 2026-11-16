@@ -1,6 +1,6 @@
 # 📒 ledger
 
-> 🗺️ Part of [**the ranch**](https://github.com/toxicwind/ranch) — the whole inference estate, one map.
+> 🗺️ Part of [**the ranch**](https://github.com/toxicwind/ranch) — the whole inference Pens, one map.
 
 The ranch account book — durable multi-provider token and cost accounting.
 Every provider key that serves traffic gets its tokens counted and, where a
@@ -65,7 +65,7 @@ const day = getDailyCost("2026-09-30");
 
 ## Wiring into a router
 
-The estate-scripts router hooks `recordUsage` into the non-streaming `callOne` path
+The Pens-scripts router hooks `recordUsage` into the non-streaming `callOne` path
 for **every** provider — the response's `usage` block fires the record, gated
 only on tokens being present. Best-effort and wrapped: accounting never throws
 into the response path. (Streaming SSE accumulation is still open.)
